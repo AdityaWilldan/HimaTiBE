@@ -82,7 +82,7 @@
         <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
             
             <header class="mb-4 lg:mb-6 not-format">
-                <figure><img class="rounded-md" src="{{ asset('images/' . $posting->gambar) }}" alt="">
+                <figure><img src="{{ asset('images/' . $posting->gambar) }}" alt="">
                 </figure>
             </header>
             <h2 class="mb-2 text-xl font-bold leading-tight text-sky-500 ">
@@ -91,7 +91,7 @@
             <p class="lead text-gray-500 pb-20 text-md font-medium">{{$posting->konten}}</p>
                 <address class="flex items-center mb-6 not-italic">
                     <div class="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
-                        <img class="mr-4 w-16 h-16 rounded-full" src="{{asset('/img/profile.png')}}" alt="Jese Leos">
+                        <img class="mr-4 w-16 h-16 rounded-full" src="https://flowbite.com/docs/images/people/profile-picture-2.jpg" alt="Jese Leos">
                         <div>
                             <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{$posting->admin}}</a>
                             <p class="text-base text-gray-500 dark:text-gray-400">Hima Teknik Informatika Admin</p>

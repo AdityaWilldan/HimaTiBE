@@ -65,7 +65,24 @@
               </header>
                 <!-- Headaer end -->
 
+                
+                <!-- <div class="lg:flex lg:justify-between lg:items-center lg:w-full">
+                    <div class="lg:w-2/6 xl:w-2/4 mt-20 lg:mt-40 lg:ml-16 text-center lg:text-left">
+                      <div class="text-6xl font-semibold text-gray-200 leading-none">Welcome To HimaTI</div>
+                      <div class="mt-6 text-xl font-medium text-sky-500 antialiased">Wadah Ekspresi & kreativitas Mahasiswa Teknik informatika di Universitas Mandiri Subang.</div>
+                      <button class="mt-6 px-8 py-4 rounded-full font-normal tracking-wide bg-gradient-to-b from-blue-600 to-blue-700 text-white outline-none focus:outline-none hover:shadow-lg hover:from-blue-700 transition duration-200 ease-in-out">
+                        Profile Ormawa
+                      </button>
+                    </div>
+                    <div class="lg:w-3/6 ml-5 lg:ml-12 mb-11 py-5 text-center lg:text-left">
+                      <img width="350px" src="/img/logo-removebg-preview.png" alt="Your Image" class=" mx-auto lg:mx-0 mr-2" />
+                    </div>
+                  </div>
+                  <div class="mt-12 lg:mt-32 lg:ml-20 text-center lg:text-left">
+                    <button type="button" class="flex items-center justify-center w-12 h-12 rounded-full bg-cool-gray-100 text-gray-800 animate-bounce hover:text-gray-900 hover:bg-cool-gray-50 transition duration-300 ease-in-out cursor-pointer">
 
+                    </button>
+                  </div> -->
 
             <section class="bg-slate-950 pt-30">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">

@@ -30,8 +30,6 @@ public function update($id, Request $request){
     $posting = Posting::find($id);
 
     $data = $request->except(['_token','submit','_method']);
-
-    $data['konten'] = substr($data['konten'], 1, 355);
     if($request->hasFile('gambar')){
         $gambar = $request->file('gambar');
         $gambarName = time() . '.' . $gambar->getClientOriginalExtension();

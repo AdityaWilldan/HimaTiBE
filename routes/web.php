@@ -45,14 +45,14 @@ Route::get('/sejarah', function(){
 });
 
 // admin
-Route::middleware(['auth'])->group(function(){
+// Route::middleware(['auth'])->group(function(){
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/create', [AdminController::class, 'create']);
     Route::post('/store', [AdminController::class, 'store']);
     Route::get('/posting{id}/edit', [AdminController::class, 'edit']);
     Route::put('/posting{id}', [AdminController::class, 'update']);
     Route::delete('/admin/{id}', [AdminController::class, 'destroy']);
-});
+// });
 
 // artikel
 Route::get('/gallery', [ArtikelController::class, 'artikel']);
