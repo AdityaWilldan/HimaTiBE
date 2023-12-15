@@ -13,7 +13,7 @@ class ArtikelController extends Controller
     }
 
     public function update($id, Request $request){
-        $posting = Posting::find($id);
+        $posting = posting::find($id);
     
         $data = $request->except(['_token','submit','_method']);
         if($request->hasFile('gambar')){
