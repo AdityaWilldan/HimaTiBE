@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Posting;
+use App\Models\posting;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -22,12 +22,12 @@ class AdminController extends Controller
    }
 
    public function edit($id) {
-    $posting = Posting::findOrFail($id);
+    $posting = posting::findOrFail($id);
     return view('admin.edit', compact('posting'));
 }
 
 public function update($id, Request $request){
-    $posting = Posting::find($id);
+    $posting = posting::find($id);
 
     $data = $request->except(['_token','submit','_method']);
     if($request->hasFile('gambar')){
@@ -43,7 +43,7 @@ public function update($id, Request $request){
 }
 
     public function destroy($id){
-        $posting = Posting::find($id);
+        $posting = posting::find($id);
         $posting->delete();
         return redirect('/admin');
     }
