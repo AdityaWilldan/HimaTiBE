@@ -17,7 +17,10 @@ class AdminController extends Controller
    }
 
    public function store(Request $request){
-    posting::create($request->except(['_token','submit']));
+    $data = $request->except(['_token', 'submit']);
+    $this->handleImageUpload($request, $data);
+    posting::create($data);
+
     return redirect('/admin');
    }
 
@@ -29,23 +32,36 @@ class AdminController extends Controller
 public function update($id, Request $request){
     $posting = posting::find($id);
 
-    $data = $request->except(['_token','submit','_method']);
-    if($request->hasFile('gambar')){
-        $gambar = $request->file('gambar');
-        $gambarName = time() . '.' . $gambar->getClientOriginalExtension();
-        $gambar->move(public_path('images'), $gambarName);
+    $data = $request->except(['_token', 'submit', '_method']);
+    $this->handleImageUpload($request, $data);
 
-        $data['gambar'] = $gambarName;
-     }
-
-     $posting->update($data);
+    $posting->update($data);
      return redirect('/admin');
 }
 
+private function handleImageUpload(Request $request, array &$data)
+    {
+        if ($request->hasFile('gambar')) {
+            $gambar = $request->file('gambar');
+            $gambarName = time() . '.' . $gambar->getClientOriginalExtension();
+            $gambar->move(public_path('images'), $gambarName);
+
+            $data['gambar'] = $gambarName;
+        }
+    }
+
     public function destroy($id){
         $posting = posting::find($id);
+        $this->deleteImage($posting->gambar);
         $posting->delete();
         return redirect('/admin');
     }
 
+    private function deleteImage($imagePath){
+        $imagePath = public_path('images') . '/' .$imagePath;
+
+        if(file_exists($imagePath)){
+            unlink($imagePath);
+        }
+    }
 }

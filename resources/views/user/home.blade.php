@@ -9,7 +9,7 @@
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{asset('style.css')}}">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
     <title>HimaTI UM</title>
@@ -373,7 +373,7 @@
     <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 shadow-md  rounded-xl bg-clip-border">
         <div class="p-6">
             
-              <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{('/img/LOGO LITBANG.png')}}" alt="" srcset="">
+              <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO LITBANG.png')}}" alt="" srcset="">
           <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-700 hover:text-blue-400">
             LITBANG
           </h5>
@@ -500,7 +500,7 @@
 
     <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 shadow-md  rounded-xl bg-clip-border">
         <div class="p-6">
-          <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{('/img/LOGO PSDM.png')}}" alt="" srcset="">
+          <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO PSDM.png')}}" alt="" srcset="">
           <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-700 hover:text-blue-400">
             PSDM
           </h5>
@@ -543,7 +543,7 @@
 
     <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 shadow-md  rounded-xl bg-clip-border">
         <div class="p-6">
-          <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{('/img/LOGO SOSPOL.png')}}" alt="" srcset="">
+          <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO SOSPOL.png')}}" alt="" srcset="">
           <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-700 hover:text-blue-400">
             SOSPOL
           </h5>
@@ -691,7 +691,7 @@
         </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="{{asset('/script.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

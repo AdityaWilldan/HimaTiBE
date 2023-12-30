@@ -58,6 +58,6 @@ Route::get('/sejarah', function(){
 Route::get('/gallery', [ArtikelController::class, 'artikel']);
 Route::get('/artikel/{id}', [ArtikelController::class, 'lengkap'])->name('user.singlepost');
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
