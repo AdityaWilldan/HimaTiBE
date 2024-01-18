@@ -35,6 +35,8 @@ public function update($id, Request $request){
     $data = $request->except(['_token', 'submit', '_method']);
     $this->handleImageUpload($request, $data);
 
+    $data['konten'] = substr($data['konten'], 0, 399);
+
     $posting->update($data);
      return redirect('/admin');
 }
