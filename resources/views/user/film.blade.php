@@ -73,7 +73,7 @@
                 <h1 class="text-2xl font-semibold text-blue-500 capitalize lg:text-3xl">HimaTI News</h1>
     
                 <p class="max-w-lg mx-auto mt-4 text-slate-300">
-                   berita-berita terbaru seputar hima TI
+                   Update seputar Teknologi 
                 </p>
             </div>
         </div>
@@ -89,30 +89,47 @@
             <hr class="my-8 border-gray-900 dark:border-gray-700">
     
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-                @foreach ($artikel as $p)
+                @foreach ($movies as $posting)
                     <div>
-                        <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{ asset('images/' . $p->gambar) }}" alt="">
+                        <img class="object-cover object-center w-full h-80 rounded-lg " src="{{$posting['thumb']}}" alt="">
     
                         <div class="mt-8">
     
                             <h1 class="mt-4 text-xl font-semibold text-sky-500 ">
-                               {{$p->title}}
+                                {{$posting['title']}}
                             </h1>
     
-                            <p class="mt-2 text-gray-300 overflow-hidden w-200 hover:w-full transition-all duration-200 truncate focus:translate-y-5">
-                                {{$p->konten}}
+                            <p class="mt-2 text-gray-300 ">
+                                {{$posting['desc']}}
                             </p>
     
+                            @php
+                            // Menggunakan ekspresi reguler untuk menemukan tautan YouTube
+                            $youtubeLink = '';
+                            preg_match('/https:\/\/youtu\.be\/([^\s]+)/', $posting['desc'], $matches);
+            
+                            // $matches[0] akan berisi seluruh tautan YouTube, $matches[1] akan berisi kode unik video
+                            if (isset($matches[1])) {
+                                $youtubeLink = 'https://youtu.be/' . $matches[1];
+                            }
+                             @endphp
+
+                        @if (!empty($youtubeLink))
+                        <div class="mt-4">
+                            <a href="{{ $youtubeLink }}" target="_blank" class="text-blue-500 underline hover:text-blue-400">Watch on YouTube</a>
+                        </div>
+                        @endif
+
                             <div class="flex items-center justify-between mt-4">
                                 <div>
                                     <a href="#" class="text-lg font-medium text-sky-700 dark:text-sky-300 hover:underline hover:text-blue-500">
-                                       {{$p->admin}}
+                                       {{$posting['time']}}
                                     </a>
     
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">{{$p->tanggal}}</p>
+                                    {{-- <p class="text-sm text-gray-500 dark:text-gray-400">{{$p->tanggal}}</p> --}}
                                 </div>
     
-                                <a href="{{ route('user.singlepost', ['id' => $p->id]) }}" class="inline-block text-blue-500 underline hover:text-blue-400">Read more</a>
+                                {{-- <a href="{{ route('user.singlepost', ['id' => $p->id]) }}" class="inline-block text-blue-500 underline hover:text-blue-400">Read more</a> --}}
                             </div>
                         </div>
                     </div>

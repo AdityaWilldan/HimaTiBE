@@ -67,56 +67,63 @@
     </header>
     <!-- Headaer end -->
 
-    <section class="bg-gray-900 dark:bg-gray-900">
+    
+    <section class="bg-gray-900">
         <div class="container px-6 py-10 mx-auto">
             <div class="text-center">
-                <h1 class="text-2xl font-semibold text-blue-500 capitalize lg:text-3xl">HimaTI News</h1>
-    
+                <h1 class="text-2xl font-semibold text-blue-500 capitalize lg:text-3xl">HimaTiQuote!</h1>
+                <hr class="my-8 border-gray-900 dark:border-gray-700">
+                    
                 <p class="max-w-lg mx-auto mt-4 text-slate-300">
-                   berita-berita terbaru seputar hima TI
+                  ✨Quotes Inspiransi Harian✨
                 </p>
             </div>
         </div>
     </section>
 
 
-    <section class="bg-gray dark:bg-gray-900 md:flex">
-        <div class="container px-6 py-10 mx-auto">
+    
+    <section class="bg-gray bg-gray-900 md:flex">
+        <div class="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
             <div class="flex items-center justify-center">
-                <h1 class="text-2xl font-semibold text-gray-300 capitalize lg:text-3xl dark:text-white text-center">postingan terbaru</h1>
+                <h1 class="text-2xl font-semibold text-gray-300 capitalize lg:text-3xl dark:text-white text-center"></h1>
             </div>
-    
-            <hr class="my-8 border-gray-900 dark:border-gray-700">
-    
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-                @foreach ($artikel as $p)
-                    <div>
-                        <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{ asset('images/' . $p->gambar) }}" alt="">
-    
-                        <div class="mt-8">
-    
-                            <h1 class="mt-4 text-xl font-semibold text-sky-500 ">
-                               {{$p->title}}
-                            </h1>
-    
-                            <p class="mt-2 text-gray-300 overflow-hidden w-200 hover:w-full transition-all duration-200 truncate focus:translate-y-5">
-                                {{$p->konten}}
-                            </p>
-    
-                            <div class="flex items-center justify-between mt-4">
-                                <div>
-                                    <a href="#" class="text-lg font-medium text-sky-700 dark:text-sky-300 hover:underline hover:text-blue-500">
-                                       {{$p->admin}}
-                                    </a>
-    
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">{{$p->tanggal}}</p>
-                                </div>
-    
-                                <a href="{{ route('user.singlepost', ['id' => $p->id]) }}" class="inline-block text-blue-500 underline hover:text-blue-400">Read more</a>
-                            </div>
-                        </div>
+            @if(is_array($randomData))
+            @php
+                $posting = collect($randomData)->random();
+            @endphp
+           
+            <div class="bg-gray-800 max-w-xl rounded-2xl px-10 py-8 shadow-lg hover:shadow-2xl transition duration-500">
+                <div class="mt-4">
+                  <h1 class="text-lg text-blue-500 font-semibold hover:underline cursor-pointer">{{$posting['anime']}}</h1>
+                  <div class="flex mt-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  </div>
+                  <p class="mt-2 text-gray-300 ">
+                    {{$posting['indo']}}
+                </p>
+                  <div class="flex items-center">
+                    <div class="mt-4 flex items-center space-x-4 py-6">
+                      <div class="">
+                        {{-- <img class="w-12 h-12 rounded-full" src="https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1036&q=80" alt="" /> --}}
+                      </div>
+                      <div class="text-md font-semibold text-blue-500">{{$posting['character']}}<span class="font-normal"> 5 minutes ago</span></div>
                     </div>
-                @endforeach
+                  </div>
+                </div>
+              </div>
+              @endif
             </div>
         </div>
     </section>
@@ -194,16 +201,6 @@
                                 d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
                         </svg>
                     </a>
-                    <!-- Pinters -->
-                    <!-- <a href="https://id.pinterest.com/penyihirgamingmajo/" target="_blank"
-                        class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-teal-500 hover:text-white text-slate-300 hover:animate-bounce">
-                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <title>Pinterest</title>
-                            <path
-                                d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.162-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.607 0 11.985-5.365 11.985-11.987C23.97 5.39 18.592.026 11.985.026L12.017 0z" />
-                        </svg>
-                    </a> -->
                     <!-- youtube -->
                     <a href="#" target="_blank"
                         class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-teal-500 hover:text-white text-slate-300 hover:animate-bounce">

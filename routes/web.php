@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FilmController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ArtikelController;
-use App\Http\Controllers\UserController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,3 +62,6 @@ Route::get('/artikel/{id}', [ArtikelController::class, 'lengkap'])->name('user.s
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/TeknoPost', [FilmController::class, 'getMovies']);
+Route::get('/Quote', [FilmController::class, 'QuotePost']);

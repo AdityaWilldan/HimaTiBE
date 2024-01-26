@@ -37,10 +37,10 @@
             <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-900 md:dark:bg-transparent" aria-current="page">Home</a>
           </li>
           <li>
-            <a href="{{url('/gallery')}}" class="block py-2 pl-3 pr-5 text-gray-100 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-900 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+            <a href="{{url('/TeknoPost')}}" class="block py-2 pl-3 pr-5 text-gray-100 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-900 dark:hover:text-white md:dark:hover:bg-transparent">Tech</a>
           </li>
           <li>
-            <a href="{{url('/sejarah')}}" class="block py-2 pl-3 pr-4 text-gray-100 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-900 dark:hover:text-white md:dark:hover:bg-transparent">Sejarah</a>
+            <a href="{{url('/Quote')}}" class="block py-2 pl-3 pr-4 text-gray-100 rounded hover:bg-blue-700 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-blue-900 dark:hover:text-white md:dark:hover:bg-transparent">Quote</a>
           </li>
           <li>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
@@ -121,9 +121,9 @@
               </p>
               <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                 <button></button>
-                <a rel="noopener noreferrer" href="#" class="px-8 py-3 text-lg font-semibold rounded hover:text-gray-300 bg-blue-500 hover:bg-blue-800 dark:text-gray-900" data-aos="fade-right">Gallery Berita</a>
+                <a rel="noopener noreferrer" href="{{url('/gallery')}}" class="px-8 py-3 text-lg font-semibold rounded hover:text-gray-300 bg-blue-500 hover:bg-blue-800 dark:text-gray-900" data-aos="fade-right">Gallery Berita</a>
               </button>
-                <a rel="noopener noreferrer" href="/sejarah.html" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100 hover:bg-blue-800 text-slate-100" data-aos="fade-left">Profile Ormawa</a>
+                <a rel="noopener noreferrer" href="{{url('/sejarah')}}" class="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-100 hover:bg-blue-800 text-slate-100" data-aos="fade-left">Profile Ormawa</a>
               </div>
             </div>
           </div>
