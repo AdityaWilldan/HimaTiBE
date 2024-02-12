@@ -95,7 +95,7 @@
                         <div>
                             <a href="#" rel="author" class="text-xl font-bold text-gray-900 dark:text-white">{{$posting->admin}}</a>
                             <p class="text-base text-gray-500 dark:text-gray-400">Hima Teknik Informatika Admin</p>
-                            <p class="text-base text-gray-500 dark:text-gray-400"><time pubdate datetime="2022-02-08" title="February 8th, 2022">{{$posting->tanggal}}</time></p>
+                            <p class="text-base text-gray-500 dark:text-gray-400"><time pubdate datetime="2022-02-08" title="February 8th, 2022">{{$posting->created_at->format('Y-m-d')}}</time></p>
                         </div>
                     </div>
                 </address>

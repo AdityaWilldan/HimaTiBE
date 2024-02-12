@@ -16,7 +16,7 @@
         <input type="text" name="title" placeholder="title" value="{{$posting->title}}" class="bg-gray-800 text-white p-2 rounded mb-2 w-full">
         <textarea type="text" name="konten" placeholder="konten" class="bg-gray-800 text-white p-2 rounded mb-2 w-full">{{$posting->konten}}</textarea>
         <input type="text" name="admin" placeholder="admin" value="{{$posting->admin}}" class="bg-gray-800 text-white p-2 rounded mb-2 w-full">
-        <input type="text" name="tanggal" placeholder="tanggal" value="{{$posting->tanggal}}" class="bg-gray-800 text-white p-2 rounded mb-2 w-full resize-none">
+        {{-- <input type="text" name="tanggal" placeholder="tanggal" value="{{$posting->tanggal}}" class="bg-gray-800 text-white p-2 rounded mb-2 w-full resize-none"> --}}
         <input type="file" name="gambar" size="39" class="bg-gray-800 text-white p-2 rounded mb-2 w-full">
         <input type="submit" name="submit" value="Save" class="bg-purple-500 hover:bg-purple-600 text-white p-2 rounded w-full">
     </form>

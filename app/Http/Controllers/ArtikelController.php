@@ -13,7 +13,15 @@ class ArtikelController extends Controller
     }
 
     public function update($id, Request $request){
-        $posting = posting::find($id);
+        // validasi untuk menghindari SQL INJECTION
+        $request -> validate([
+            'title' => 'required|string',
+            'konten' => 'required|string',
+            'admin' => 'required|string',
+            'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+    ]);
+
+        $posting = posting::findOrFile($id);
     
         $data = $request->except(['_token','submit','_method']);
         if($request->hasFile('gambar')){

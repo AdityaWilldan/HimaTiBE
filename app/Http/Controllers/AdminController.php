@@ -30,12 +30,20 @@ class AdminController extends Controller
 }
 
 public function update($id, Request $request){
+ // validasi untuk menghindari SQL INJECTION
+ $request -> validate([
+    'title' => 'required|string',
+    'konten' => 'required|string',
+    'admin' => 'required|string',
+    'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+]);
+
     $posting = posting::find($id);
 
     $data = $request->except(['_token', 'submit', '_method']);
     $this->handleImageUpload($request, $data);
 
-    $data['konten'] = substr($data['konten'], 0, 499);
+    // $data['konten'] = substr($data['konten'], 0, 499);
 
     $posting->update($data);
      return redirect('/admin');
@@ -45,11 +53,22 @@ private function handleImageUpload(Request $request, array &$data)
     {
         if ($request->hasFile('gambar')) {
             $gambar = $request->file('gambar');
+            // Memeriksa dan membersihkan nama file gambar
+            $gambarName = $this->sanitizeFileName($gambar->getClientOriginalName());
+
             $gambarName = time() . '.' . $gambar->getClientOriginalExtension();
             $gambar->move(public_path('images'), $gambarName);
 
             $data['gambar'] = $gambarName;
         }
+    }
+
+    // SQL INJECTION handle
+    private function sanitizeFileName($fileName)
+    {
+        // Membersihkan nama file dari karakter yang tidak diinginkan
+        $fileName = preg_replace("/[^a-zA-Z0-9.]/", "", $fileName);
+        return $fileName;
     }
 
     public function destroy($id){

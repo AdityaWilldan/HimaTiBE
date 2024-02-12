@@ -16,7 +16,7 @@ return new class extends Migration
         $table->string('title');
         $table->string('konten');
         $table->string('admin');
-        $table->string('tanggal');
+        // $table->string('tanggal');
         $table->timestamps();
        });
     }

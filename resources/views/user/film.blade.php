@@ -241,6 +241,48 @@
         </div>
     </footer>
 
+    <script>
+        // Buat permintaan AJAX saat halaman dimuat
+        window.addEventListener('DOMContentLoaded', function () {
+            // Lakukan permintaan AJAX menggunakan jQuery
+            $.ajax({
+                url: 'https://the-lazy-media-api.vercel.app/api/tech?page=1',
+                method: 'GET',
+                success: function (data) {
+                    // Tangani data yang diterima
+                    displayMovies(data);
+                },
+                error: function (xhr, status, error) {
+                    console.error(status, error);
+                }
+            });
+        });
+    
+        // Fungsi untuk menampilkan data di halaman HTML
+        function displayMovies(movies) {
+            // Temukan elemen di mana Anda ingin menampilkan data
+            var moviesContainer = document.getElementById('movies-container');
+    
+            // Bersihkan konten sebelumnya
+            moviesContainer.innerHTML = '';
+    
+            // Loop melalui setiap film dan tambahkan ke kontainer
+            movies.forEach(function (movie) {
+                var movieElement = `
+                    <div>
+                        <img class="object-cover object-center w-full h-80 rounded-lg" src="${movie.thumb}" alt="">
+                        <div class="mt-8">
+                            <h1 class="mt-4 text-xl font-semibold text-sky-500">${movie.title}</h1>
+                            <p class="mt-2 text-gray-300">${movie.desc}</p>
+                            <!-- Tambahkan lebih banyak informasi atau tautan jika diperlukan -->
+                        </div>
+                    </div>
+                `;
+                moviesContainer.innerHTML += movieElement;
+            });
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

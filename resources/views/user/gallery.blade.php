@@ -90,7 +90,7 @@
     
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
                 @foreach ($artikel as $p)
-                    <div>
+                    <div id="blog-posts">
                         <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="{{ asset('images/' . $p->gambar) }}" alt="">
     
                         <div class="mt-8">
@@ -109,7 +109,7 @@
                                        {{$p->admin}}
                                     </a>
     
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">{{$p->tanggal}}</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">{{$p->created_at->format('Y-m-d')}}</p>
                                 </div>
     
                                 <a href="{{ route('user.singlepost', ['id' => $p->id]) }}" class="inline-block text-blue-500 underline hover:text-blue-400">Read more</a>
@@ -224,6 +224,33 @@
         </div>
     </footer>
 
+    <script>
+        $(document).ready(function() {
+            // Fungsi untuk memuat postingan blog secara asinkron saat halaman dimuat
+            function loadPosts() {
+                $.ajax({
+                    url: "/gallery", 
+                    type: "GET",
+                    dataType: "html",
+                    success: function(response) {
+                        $('#blog-posts').html(response); // Perbarui bagian postingan blog
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            }
+    
+            // Panggil fungsi untuk memuat postingan blog saat halaman dimuat
+            loadPosts();
+    
+            // Fungsi untuk memperbarui postingan blog saat tombol ditekan (opsional)
+            $('#update-posts-btn').click(function() {
+                loadPosts(); // Panggil fungsi untuk memuat postingan blog
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

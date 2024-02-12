@@ -107,7 +107,7 @@
             <td class="py-2 px-4">{{$p->title}}</td>
             <td class="py-2 px-4">{{$p->konten}}</td>
             <td class="py-2 px-4">{{$p->admin}}</td>
-            <td class="py-2 px-4">{{$p->tanggal}}</td>
+            <td class="py-2 px-4">{{$p->created_at->format('Y-m-d')}}</td>
             <td>
                 @if($p->gambar)
                     <img src="{{ asset('images/' . $p->gambar) }}" alt="Gambar" class="thumbnail">
