@@ -105,7 +105,7 @@
         <tr class="text-left">
             {{-- <td class="py-2 px-4">{{$p->id}}</td> --}}
             <td class="py-2 px-4">{{$p->title}}</td>
-            <td class="py-2 px-4">{{$p->konten}}</td>
+            <td class="py-2 px-4">{{ substr($p->konten, 0, 100) }}</td>
             <td class="py-2 px-4">{{$p->admin}}</td>
             <td class="py-2 px-4">{{$p->created_at->format('Y-m-d')}}</td>
             <td>
