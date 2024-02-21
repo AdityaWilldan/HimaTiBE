@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
-     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('style.css')}}">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
     <title>HimaTI UM</title>
@@ -22,7 +21,7 @@
       <nav id="navbar" class="shadow-xl bg-gray-900 rounded p-2">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
             <a href="https://www.instagram.com/hima_teknikinformatika/" class="flex items-center">
-                <img src="/img/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
+                <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
                 <span class="self-center text-2xl font-sans whitespace-nowrap text-blue-500">Hima<span class="text-sky-400">TI</span></span>
             </a>
             <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
@@ -69,12 +68,12 @@
 
 
                   <section class="pt-50 pb-32 relative ">
-                    <div class="absolute w-full h-4/5 top-0 left-0 bg-cover bg-center bg-no-repeat opacity-40 bg-fixed bg-contain" style="background-image:url(/img/baksos3.JPG)"></div>
+                    <div class="absolute w-full h-4/5 top-0 left-0 bg-cover bg-center bg-no-repeat opacity-40 bg-fixed bg-contain" style="background-image:url(https://i.pinimg.com/originals/67/ca/2e/67ca2ea86c93289437e5fd2fd928800c.jpg)"></div>
                     
                     <!-- <section class="bg-slate-950 pt-30"> -->
                       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                           <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7" role="alert" data-aos="zoom-in">
-                            <img width="200px" src="/img/LOGO SOSPOL.png" alt="" class="fade-in">
+                            <img width="200px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/LOGO%20SOSPOL.png" alt="" class="fade-in">
                           </a>
                           <h1 class="typing-animation-text mb-4 text-4xl font-extrabold tracking-tight leading-none text-slate-400 text-bold md:text-5xl lg:text-5xl dark:text-slate fade-in-right bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent" data-aos="fade-right">SOSPOL<br></h1>
                           <p class="mb-8 text-lg font-bold text-gray-500 lg:text-xl sm:px-16 xl:px-48 text-sky-400 slide-in2" data-aos="fade-left">
@@ -103,28 +102,28 @@
               <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/opik.jpg" alt="Landing Page" width="w-full" />
+                          <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/opik.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Opik(Obrolan Politik)</h3>
                       <p class="font-medium text-base text-slate-400">Opik adalah platform diskusi yang didedikasikan untuk menjembatani pemahaman dan perdebatan tentang beragam aspek politik yang memengaruhi kehidupan kita. Kami percaya bahwa berbagi informasi, gagasan, dan sudut pandang adalah kunci untuk memperkuat partisipasi demokratis dan meningkatkan kesadaran politik di kalangan mahasiswa.</p>
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/opik2.jpg" alt="Landing Page" width="w-full" />
+                          <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/opik2.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Opik(Obrolan Politik)</h3>
                       <p class="font-medium text-base text-slate-400">Melalui sesi-sesi obrolan santai, debat terstruktur, dan forum interaktif, kami menciptakan lingkungan yang ramah dan inklusif di mana setiap orang dapat berbagi pendapat, ide, dan pengalaman mereka tentang isu-isu politik terkini. Kami mengundang pembicara ahli, aktivis, dan praktisi politik untuk berbagi pengetahuan mereka tentang berbagai topik politik, memperluas pemahaman peserta, dan memberi inspirasi untuk terlibat dalam proses politik.</p>
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/bukber.JPG" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/35/a1/03/35a1038dd9517a7230fa93305439c23d.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Buka Bersama</h3>
                       <p class="font-medium text-base text-slate-400">Berkumpul Dan Berbuka Bersama pada Bulan Ramadhan Dengan Tujuan Menjaga Kekompakkan ,Berbagi Cerita dan Berbagi Pengalaman Antar Anggota HimaTI.</p>
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/bukber4.JPG" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/9d/17/e6/9d17e6700db60b6fa1ba1f372480d19b.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Buka Bersama</h3>
                       <p class="font-medium text-base text-slate-400">Menjaga Dan Menjalin Tali silaturahmi Antar  Anggota Himpunan Teknik Informatika.</p>
@@ -143,25 +142,25 @@
       
           <div class="lg:gap-xl-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4" data-aos="zoom-in">
             <div class="mb-12 lg:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Wakil</p>
 
             </div>
             <div class="mb-12 lg:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/reyanRv.jpg')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/reyanRv.jpg')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Reyan Andika</h5>
               <p class="mb-6 text-primary text-lg">Ketua Departemen</p>
 
             </div>
             <div class="mb-12 md:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Sekertaris</p>
 
             </div>
             <div class="mb-12 md:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Bendahara</p>
 
@@ -181,7 +180,7 @@
       
             <div class="flex flex-wrap">
               <div class="mb-6 md:mb-0">
-                <img width="100px" src="/img/logo-removebg-preview.png" alt="">
+                <img width="100px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" alt="">
               </div>
               <div class="w-full px-4 mb-10 text-slate-300 font-medium md:w-1/3">
                   <h2 class="font-bold text-2xl text-white mb-5">Himpunan Teknik Informatika</h2>
@@ -226,50 +225,7 @@
               </div>
               <div class="w-full px-4 mb-10 md:w-1/3 mx-auto">
                   <h3 class="font-semibold text-2xl text-white mb-5">Hima TI Social Media</h3>
-                  <!-- <ul class="text-slate-300">
-                    <div class="flex items-center mb-3">
-                      <a href="https://www.instagram.com/wildan_ad1tya/" target="_blank"
-                          class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-indigo-500 hover:text-white text-slate-300 hover:animate-bounce">
-                          <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <title>Instagram</title>
-                              <path
-                                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z" />
-                          </svg>
-                      </a>
-                      <li class="px-10">
-                          <a href="#" class="inline-block text-base hover:text-indigo-500 mb-3">Instagram</a>
-                      </li>
-                    </div>
-                    <div class="flex items-center mb-3">
-                      <a href="https://www.youtube.com/channel/UCC49N0rCpXOx8aRQUPR6frg" target="_blank"
-                          class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-indigo-500 hover:text-white text-slate-300 hover:animate-bounce">
-                          <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <title>YouTube</title>
-                              <path
-                                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                          </svg>
-                      </a>
-                      <li class="px-10">
-                          <a href="#" class="inline-block text-base hover:text-indigo-500 mb-3">YouTube</a>
-                      </li>
-                    </div>
-                    <div class="flex items-center">
-                      <a href="https://www.facebook.com/wildan.aditya.7311" target="_blank"
-                      class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 hover:border-teal-500 hover:bg-indigo-500 hover:text-white text-slate-300 hover:animate-bounce">
-                      <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <title>Facebook</title>
-                          <path
-                              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                      </svg>
-                      </a>
-                      <li class="px-10">
-                          <a href="#" class="inline-block text-base hover:text-indigo-500 mb-3">Twitter</a>
-                      </li>
-                    </div>
-                  </ul> -->
+
                   <ul role="list" class="space-y-8">
       
                     <li class="text-white">

@@ -20,7 +20,7 @@
           <nav id="navbar" class="shadow-xl bg-gray-900 rounded p-2">
               <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
                 <a href="https://www.instagram.com/hima_teknikinformatika/" class="flex items-center">
-                    <img src="/img/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
+                    <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
                     <span class="self-center text-2xl font-sans whitespace-nowrap text-blue-500">Hima<span class="text-sky-400">TI</span></span>
                 </a>
                 <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
@@ -67,12 +67,12 @@
 
 
                   <section class="pt-50 pb-32 relative">
-                    <div class="absolute w-full h-3/4 top-0 left-0 bg-cover bg-center bg-no-repeat opacity-40 bg-fixed bg-contain" style="background-image:url(/img/mubes.jpg)"></div>
+                    <div class="absolute w-full h-3/4 top-0 left-0 bg-cover bg-center bg-no-repeat opacity-40 bg-fixed bg-contain" style="background-image:url(https://raw.githubusercontent.com/AdityaWilldan/HimaTiBe/main/public/img/mubes.jpg)"></div>
                     
                     <!-- <section class="bg-slate-950 pt-30"> -->
                       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                           <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7" role="alert" data-aos="zoom-in">
-                            <img width="200px" src="/img/LOGO KOMPUB.png" alt="" class="fade-in">
+                            <img width="200px" src="https://raw.githubusercontent.com/AdityaWilldan/HimaTiBe/main/public/img/LOGO%20KOMPUB.png" alt="" class="fade-in">
                           </a>
                           <h1 class="typing-animation-text mb-4 text-4xl font-extrabold tracking-tight leading-none text-slate-400 text-bold md:text-5xl lg:text-5xl dark:text-slate fade-in-right bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent" data-aos="fade-right">KOMPUB<br></h1>
                           <p class="mb-8 text-lg font-bold text-gray-500 lg:text-xl sm:px-16 xl:px-48 text-sky-500 slide-in2" data-aos="fade-left">
@@ -101,28 +101,28 @@
               <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                   <div class="mb-12 p-4 md:w-1/2"  data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/studibanding.JPG" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/92/9b/97/929b97622579287ccf163708a4e9542a.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Studi Banding</h3>
                       <p class="font-medium text-base text-slate-400">Suasana penuh semangat dan inspiratif dari kegiatan studi banding Departemen Komunikasi Publik (Kompub) HIMA Teknik Informatika! Kami tidak hanya sekadar mengelola komunikasi antara HIMA dan mahasiswa, tetapi juga terus berkembang melalui penjajakan dan pembelajaran dari kampus-kampus lain.</p>
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/studibanding2.JPG" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/bd/d5/3d/bdd53d760a5be9f3d0c367bf54f5ee45.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Studi Banding</h3>
                       <p class="font-medium text-base text-slate-400">Dalam rangka meningkatkan kualitas layanan dan mengembangkan ide-ide inovatif, tim Kompub mengadakan studi banding dengan kampus lain. Kami menjelajahi berbagai pendekatan komunikasi, mengeksplorasi tren terkini, dan berbagi pengalaman dengan rekan-rekan dari institusi sejawat.</p>
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/sosialiasi2.jpg" alt="Landing Page" width="w-full" />
+                          <img src="https://raw.githubusercontent.com/AdityaWilldan/HimaTiBe/main/public/img/sosialiasi2.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Olahraga</h3>
                       <p class="font-medium text-base text-slate-400">Departemen Komunikasi Publik (Kompub) HIMA Teknik Informatika juga meyakini bahwa menjaga komunikasi yang baik melibatkan beragam kegiatan, termasuk olahraga. Salah satu cara kami menjaga kebersamaan dan semangat tim adalah melalui kegiatan Futsal bersama Ormawa(Organisasi Mahasiswa) Luar Kampus Di kota subang.</p>
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/sosialiasi.jpg" alt="Landing Page" width="w-full" />
+                          <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/sosialiasi.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Sosialisasi</h3>
                       <p class="font-medium text-base text-slate-400">Sosialisasi Kampus adalah inti dari upaya kami untuk memperkenalkan nilai-nilai, program, dan sumber daya yang tersedia di lingkungan kampus kita yang beragam. Melalui berbagai kegiatan interaktif, kami bertujuan untuk menciptakan suasana inklusif dan mendukung pertumbuhan akademik, sosial, dan pribadi setiap individu .</p>
@@ -141,25 +141,25 @@
       
           <div class="lg:gap-xl-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4" data-aos="zoom-in">
             <div class="mb-12 lg:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Wakil</p>
 
             </div>
             <div class="mb-12 lg:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/arbianRv.jpg')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/arbianRv.jpg')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Arbian Fajarudin</h5>
               <p class="mb-6 text-primary text-lg">Ketua Departemen</p>
 
             </div>
             <div class="mb-12 md:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Sekertaris</p>
 
             </div>
             <div class="mb-12 md:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Bendahara</p>
 
@@ -180,7 +180,7 @@
           
                 <div class="flex flex-wrap">
                   <div class="mb-6 md:mb-0">
-                    <img width="100px" src="/img/logo-removebg-preview.png" alt="">
+                    <img width="100px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" alt="">
                   </div>
                   <div class="w-full px-4 mb-10 text-slate-300 font-medium md:w-1/3">
                       <h2 class="font-bold text-2xl text-white mb-5">Himpunan Teknik Informatika</h2>

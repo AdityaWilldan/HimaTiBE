@@ -7,7 +7,7 @@
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('style.css')}}">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
     <title>HimaTI UM</title>
@@ -20,7 +20,7 @@
       <nav id="navbar" class="shadow-xl bg-gray-900 rounded p-2">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
             <a href="https://www.instagram.com/hima_teknikinformatika/" class="flex items-center">
-                <img src="/img/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
+                <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
                 <span class="self-center text-2xl font-sans whitespace-nowrap text-blue-500">Hima<span class="text-sky-400">TI</span></span>
             </a>
             <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
@@ -66,12 +66,12 @@
     <!-- Headaer end -->
 
                   <section class="pt-50 pb-32 relative">
-                    <div class="absolute w-full h-4/5 top-0 left-0 bg-cover bg-center bg-no-repeat opacity-40 bg-fixed bg-contain" style="background-image:url(/img/ldkm.JPG)"></div>
+                    <div class="absolute w-full h-4/5 top-0 left-0 bg-cover bg-center bg-no-repeat opacity-40 bg-fixed bg-contain" style="background-image:url(https://i.pinimg.com/originals/7c/df/be/7cdfbe1ff40ee52e8725a1596a349c65.jpg)"></div>
                     
                     <!-- <section class="bg-slate-950 pt-30"> -->
                       <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                           <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7" role="alert" data-aos="zoom-in">
-                            <img width="200px" src="/img/LOGO PSDM.png" alt="" class="fade-in">
+                            <img width="200px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/LOGO%20PSDM.png" alt="" class="fade-in">
                           </a>
                           <h1 class="typing-animation-text mb-4 text-4xl font-extrabold tracking-tight leading-none text-slate-400 text-bold md:text-5xl lg:text-5xl dark:text-slate fade-in-right bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent" data-aos="fade-right">PSDM<br></h1>
                           <p class="mb-8 text-lg font-bold text-gray-500 lg:text-xl sm:px-16 xl:px-48 text-sky-400 slide-in2" data-aos="fade-left">
@@ -100,7 +100,7 @@
               <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/ldkm3.JPG" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/a6/f2/b3/a6f2b3c72d05bdb5e7582e1202886ecd.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Simulasi Sidang</h3>
                       <p class="font-medium text-base text-slate-400">Departemen Pengembangan Sumber Daya Mahasiswa (PSDM) HIMA Teknik Informatika terus berkomitmen untuk memberdayakan anggota melalui berbagai kegiatan berkualitas. 
@@ -108,14 +108,14 @@
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/ldkm5.JPG" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/bc/2c/d5/bc2cd5cd629713bf73bf70b839146c4c.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Simulasi Sidang</h3>
                       <p class="font-medium text-base text-slate-400">Selain itu, kami juga mengadakan program upgrading yang dirancang khusus untuk mengasah kemampuan teknis dan soft skills. Melalui workshop, seminar, dan pelatihan intensif, anggota kami memiliki kesempatan untuk terus berkembang dan selalu siap menghadapi tantangan di dunia teknologi informasi yang terus berkembang.</p>
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/studibanding4.jpg" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/7f/fa/b9/7ffab9da551aebbca1a7a73b240e0c8d.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Upgrading</h3>
                       <p class="font-medium text-base text-slate-400">Simulasi sidang tidak hanya mempersiapkan anggota untuk situasi formal, tetapi juga mengasah keterampilan berbicara, analisis, dan kepemimpinan. 
@@ -123,7 +123,7 @@
                   </div>
                   <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
                       <div class="rounded-md shadow-mb overflow-hidden">
-                          <img src="/img/ldkm4.JPG" alt="Landing Page" width="w-full" />
+                          <img src="https://i.pinimg.com/originals/b2/d3/40/b2d340adf2855abbe91c40fe6e2eb03f.jpg" alt="Landing Page" width="w-full" />
                       </div>
                       <h3 class="font-semibold text-xl text-primary mt-5 mb-3">Upgrading</h3>
                       <p class="font-medium text-base text-slate-400">Kami percaya bahwa investasi dalam pengembangan diri adalah kunci untuk menciptakan generasi pemimpin yang handal dan berdaya saing tinggi. Dengan simulasi sidang dan program upgrading, PSDM membuka pintu bagi setiap anggota untuk meraih potensinya penuh. Bergabunglah dengan kami dalam perjalanan pengembangan diri yang menyenangkan dan bermanfaat!</p>
@@ -142,25 +142,25 @@
       
           <div class="lg:gap-xl-12 grid gap-x-6 md:grid-cols-2 lg:grid-cols-4" data-aos="zoom-in">
             <div class="mb-12 lg:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Wakil</p>
 
             </div>
             <div class="mb-12 lg:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/rezaRv.jpg')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/rezaRv.jpg')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Reza</h5>
               <p class="mb-6 text-primary text-lg">Ketua Departemen</p>
 
             </div>
             <div class="mb-12 md:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Sekertaris</p>
 
             </div>
             <div class="mb-12 md:mb-0">
-              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('/img/profile.png')}}" alt="avatar" />
+              <img class="mx-auto mb-6 rounded-lg shadow-lg dark:shadow-black/20 w-[150px]" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/profile.png')}}" alt="avatar" />
               <h5 class="mb-4 text-2xl font-bold text-slate-400">Nama</h5>
               <p class="mb-6 text-primary text-lg">Bendahara</p>
 
@@ -180,7 +180,7 @@
       
             <div class="flex flex-wrap">
               <div class="mb-6 md:mb-0">
-                <img width="100px" src="/img/logo-removebg-preview.png" alt="">
+                <img width="100px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" alt="">
               </div>
               <div class="w-full px-4 mb-10 text-slate-300 font-medium md:w-1/3">
                   <h2 class="font-bold text-2xl text-white mb-5">Himpunan Teknik Informatika</h2>

@@ -7,7 +7,7 @@
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('style.css')}}">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
     <title>HimaTI UM</title>
@@ -20,7 +20,7 @@
       <nav id="navbar" class="shadow-xl bg-gray-900 rounded p-2">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
             <a href="https://www.instagram.com/hima_teknikinformatika/" class="flex items-center">
-                <img src="/img/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
+                <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
                 <span class="self-center text-2xl font-sans whitespace-nowrap text-blue-500">Hima<span class="text-sky-400">TI</span></span>
             </a>
             <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
@@ -70,15 +70,15 @@
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
          <!-- Item 1 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{asset('/img/carousel.jpeg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/carousel.jpeg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 2 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
-        <img src="{{asset('/img/carousel2.jpeg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        <img src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/carousel2.jpeg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
         <!-- Item 3 -->
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="{{asset('/img/carousel3.jpeg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+            <img src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/carousel3.jpeg')}}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
         </div>
     </div>
     <!-- Slider controls -->
@@ -106,7 +106,7 @@
           <div class="container flex flex-col lg:flex-row justify-center items-center p-6 mx-auto sm:py-12 lg:py-24">
             <div class="lg:w-1/2 p-6 lg:p-0">
               <div class="h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 relative" data-aos="fade-right" data-aos-offset="300">
-                <img width="200px" src="/img/logo-removebg-preview.png" alt="" class="object-contain w-full h-full">
+                <img width="200px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" alt="" class="object-contain w-full h-full">
               </div>
             </div>
             <div class="lg:w-1/2 flex flex-col justify-center p-6 text-center lg:text-left" data-aos="fade-left">
@@ -165,7 +165,7 @@
                       <div class="flex flex-wrap justify-center text-center mb-24" data-aos="fade-up">
                           <div class="w-full lg:w-6/12 px-4">
                               <!-- Header -->
-                              <h1 class="text-gray-400 text-4xl font-bold mb-8 bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent">
+                              <h1 class=" text-4xl font-bold mb-8 bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent">
                                   Our Leader And secretary
                               </h1>
       
@@ -183,7 +183,7 @@
                               <div class="flex flex-col">
                                   <!-- Avatar -->
                                   <div class="mx-auto outline outline-offset-2 outline-1 rounded-xl outline-blue-500/50">
-                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('/img/adas-fotor-bg-remover-20231109204128.png')}}">
+                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/adas-fotor-bg-remover-20231109204128.png')}}">
                                 </div>
       
                                   <!-- Details -->
@@ -208,7 +208,7 @@
                               <div class="flex flex-col">
                                   <!-- Avatar -->
                                   <div class="mx-auto outline outline-offset-2 outline-1 rounded-xl outline-blue-500/50">
-                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('/img/dhea-fotor-bg-remover-2023110921829.png')}}">
+                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/dhea-fotor-bg-remover-2023110921829.png')}}">
                                 </div>
       
                                   <!-- Details -->
@@ -233,7 +233,7 @@
                               <div class="flex flex-col">
                                   <!-- Avatar -->
                                   <div class="mx-auto outline outline-offset-2 outline-1 rounded-xl outline-blue-500/50">
-                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('/img/salma3-fotor-bg-remover-2023110921110.png')}}">
+                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/salma3-fotor-bg-remover-2023110921110.png')}}">
                                 </div>
       
                                   <!-- Details -->
@@ -258,7 +258,7 @@
                               <div class="flex flex-col">
                                   <!-- Avatar -->
                                   <div class="mx-auto outline outline-offset-2 outline-1 rounded-xl outline-blue-500/50">
-                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('/img/regina-fotor-bg-remover-2023110921163.png')}}">
+                                    <img width="300px" class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/regina-fotor-bg-remover-2023110921163.png')}}">
                                 </div>
       
                                   <!-- Details -->
@@ -287,7 +287,7 @@
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16"  data-aos="fade-up" data-aos-offset="300">
               <!-- <h4 class="font-semibold text-lg text-blue-500 mb-2">Departemen</h4> -->
-              <h2 class="font-bold text-slate-400 text-3xl mb-4 sm:text-4xl lg:text-5xl bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent">Departemen HimaTI</h2>
+              <h2 class="font-bold text-3xl mb-4 sm:text-4xl lg:text-5xl bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent">Departemen HimaTI</h2>
               <p class="font-medium text-md text-slate-300 md:text-lg">Himpunan Mahasiswa Teknik Informatika mempunyai Departemen tersendiri 
                   <P class="font-medium text-md text-slate-300 md:text-lg">untuk setiap keanggotaan sesuai kemampuan masing-masing anggota.</P>
               </p>
@@ -299,7 +299,7 @@
 <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 outline outline-offset-2 outline-1 shadow-md  rounded-xl bg-clip-border hover:bg-gradient-to-r from-blue-950 to-blue-900">
     <div class="p-6">
         
-          <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO LITBANG.png')}}" alt="" srcset="">
+          <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/LOGO%20LITBANG.png')}}" alt="" srcset="">
       <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-600 hover:text-blue-400">
         LITBANG
       </h5>
@@ -311,7 +311,7 @@
     <div class="p-6 pt-0">
       <a
         class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
-        href="/litbang/litbang.html"
+        href="{{url('/litbang')}}"
       >
         <button
         class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-cyan-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-cyan-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -341,7 +341,7 @@
 
 <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 outline outline-offset-2 outline-1 shadow-md  rounded-xl bg-clip-border hover:bg-gradient-to-r from-blue-950 to-blue-900">
     <div class="p-6">
-      <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO KOMPUB.png')}}" alt="">
+      <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/LOGO%20KOMPUB.png')}}" alt="">
       <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-700 hover:text-blue-400">
         KOMPUB
       </h5>
@@ -354,7 +354,7 @@
     <div class="p-6 pt-0">
       <a
         class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
-        href="/kompub/kompub.html"
+        href="{{url('/kompub')}}"
       >
         <button
           class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-cyan-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-cyan-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -384,7 +384,7 @@
 
 <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 outline outline-offset-2 outline-1 shadow-md  rounded-xl bg-clip-border hover:bg-gradient-to-r from-blue-950 to-blue-900">
     <div class="p-6">
-     <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO MEDFO.png')}}" alt="" srcset="">
+     <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/LOGO%20MEDFO.png')}}" alt="" srcset="">
       <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-700 hover:text-blue-400">
        MEDFO
       </h5>
@@ -396,7 +396,7 @@
     <div class="p-6 pt-0">
       <a
         class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
-        href="/medfo/medfo.html"
+        href="{{url('/medfo')}}"
       >
         <button
           class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-cyan-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-cyan-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -426,7 +426,7 @@
 
 <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 outline outline-offset-2 outline-1 shadow-md  rounded-xl bg-clip-border hover:bg-gradient-to-r from-blue-950 to-blue-900">
     <div class="p-6">
-      <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO PSDM.png')}}" alt="" srcset="">
+      <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/LOGO%20PSDM.png')}}" alt="" srcset="">
       <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-700 hover:text-blue-400">
         PSDM
       </h5>
@@ -439,7 +439,7 @@
     <div class="p-6 pt-0">
       <a
         class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
-        href="/psdm/psdm.html"
+        href="{{url('/psdm')}}"
       >
         <button
           class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-cyan-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-cyan-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -469,7 +469,7 @@
 
 <div class="relative flex flex-col mt-6 text-gray-700 bg-gray-900 outline outline-offset-2 outline-1 shadow-md  rounded-xl bg-clip-border hover:bg-gradient-to-r from-blue-950 to-blue-900">
     <div class="p-6">
-      <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('/img/LOGO SOSPOL.png')}}" alt="" srcset="">
+      <img  class="w-12 h-12 mb-4 text-cyan-500" src="{{asset('https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/LOGO%20SOSPOL.png')}}" alt="" srcset="">
       <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-cyan-700 hover:text-blue-400">
         SOSPOL
       </h5>
@@ -482,7 +482,7 @@
     <div class="p-6 pt-0">
       <a
         class="!font-medium !text-blue-gray-900 !transition-colors hover:!text-pink-500"
-        href="/sospol/sospol.html"
+        href="{{url('/sospol')}}"
       >
         <button
           class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-cyan-500 uppercase align-middle transition-all rounded-lg select-none hover:bg-cyan-500/10 active:bg-pink-500/30 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -525,7 +525,7 @@
 
       <div class="flex flex-wrap">
         <div class="mb-6 md:mb-0">
-          <img width="100px" src="/img/logo-removebg-preview.png" alt="">
+          <img width="100px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" alt="">
         </div>
         <div class="w-full px-4 mb-10 text-slate-300 font-medium md:w-1/3">
             <h2 class="font-bold text-2xl text-white mb-5">Himpunan Teknik Informatika</h2>

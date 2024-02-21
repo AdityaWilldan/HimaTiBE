@@ -7,10 +7,16 @@
 
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('style.css')}}">
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
     <title>HimaTI UM</title>
+    <style>
+        #background {
+/* background: radial-gradient(ellipse at bottom, #0f172a 0%, #020617 100%); */
+background: radial-gradient(ellipse at bottom, #172554 0%, #030617 100%)
+}
+    </style>
     
 </head>
 <body class="overflow-x-hidden" id="background">
@@ -20,7 +26,7 @@
       <nav id="navbar" class="shadow-xl bg-gray-900 rounded p-2">
           <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
             <a href="https://www.instagram.com/hima_teknikinformatika/" class="flex items-center">
-                <img src="/img/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
+                <img src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" class="h-10 mr-3 " alt="Will Dev" />
                 <span class="self-center text-2xl font-sans whitespace-nowrap text-blue-500">Hima<span class="text-sky-400">TI</span></span>
             </a>
             <button data-collapse-toggle="navbar-solid-bg" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-solid-bg" aria-expanded="false">
@@ -111,7 +117,7 @@
   
         <div class="flex flex-wrap">
           <div class="mb-6 md:mb-0">
-            <img width="100px" src="/img/logo-removebg-preview.png" alt="">
+            <img width="100px" src="https://raw.githubusercontent.com/AdityaWilldan/asset-webHimaTi/main/logo-removebg-preview.png" alt="">
           </div>
           <div class="w-full px-4 mb-10 text-slate-300 font-medium md:w-1/3">
               <h2 class="font-bold text-2xl text-white mb-5">Himpunan Teknik Informatika</h2>
