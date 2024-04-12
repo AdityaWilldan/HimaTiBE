@@ -17,6 +17,13 @@ class AdminController extends Controller
    }
 
    public function store(Request $request){
+    $request -> validate([
+        'title' => 'required|string',
+        'konten' => 'required|string',
+        'admin' => 'required|string',
+        'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+    ]);
+    
     $data = $request->except(['_token', 'submit']);
     $this->handleImageUpload($request, $data);
     posting::create($data);
