@@ -16,6 +16,11 @@
 /* background: radial-gradient(ellipse at bottom, #0f172a 0%, #020617 100%); */
 background: radial-gradient(ellipse at bottom, #172554 0%, #030617 100%)
 }
+  div#disqus_thread {
+  background-color: #172554;
+  border-radius: 30px;
+  padding: 12px;
+  }
     </style>
     
 </head>
@@ -104,9 +109,31 @@ background: radial-gradient(ellipse at bottom, #172554 0%, #030617 100%)
                         </div>
                     </div>
                 </address>
-               
+                <div class="text-gray-900 dark:text-white pt-24 pb-12">
+                  <div id="disqus_thread"></div>
+                  <script>
+                      /**
+                      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                      /*
+                      var disqus_config = function () {
+                      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                      };
+                      */
+                      (function() { // DON'T EDIT BELOW THIS LINE
+                      var d = document, s = d.createElement('script');
+                      s.src = 'https://himati-1.disqus.com/embed.js';
+                      s.setAttribute('data-timestamp', +new Date());
+                      (d.head || d.body).appendChild(s);
+                      })();
+                  </script>
+                  <script id="dsq-count-scr" src="//himati-1.disqus.com/count.js" async></script>
+                  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                 </div>
         </article>
   </main>
+
   <div class="">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1e3a8a" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,74.7C384,85,480,139,576,165.3C672,192,768,192,864,181.3C960,171,1056,149,1152,128C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   </div>

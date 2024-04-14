@@ -87,9 +87,9 @@
             <hr class="my-8 border-gray-900 dark:border-gray-700">
     
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-                @foreach ($movies as $posting)
+                @foreach ($limitedArticle as $posting)
                     <div>
-                        <img class="object-cover object-center w-full h-80 rounded-lg " src="{{$posting['thumb']}}" alt="">
+                        <img class="object-cover object-center w-full h-80 rounded-lg " src="{{$posting['image']['large']}}" alt="">
     
                         <div class="mt-8">
     
@@ -98,13 +98,14 @@
                             </h1>
     
                             <p class="mt-2 text-gray-300 ">
-                                {{$posting['desc']}}
+                                {{$posting['content']}}
                             </p>
     
                             @php
+                            //  $description = strip_tags($posting['description']);
                             // Menggunakan ekspresi reguler untuk menemukan tautan YouTube
                             $youtubeLink = '';
-                            preg_match('/https:\/\/youtu\.be\/([^\s]+)/', $posting['desc'], $matches);
+                            preg_match('/https:\/\/youtu\.be\/([^\s]+)/', $posting['content'], $matches);
             
                             // $matches[0] akan berisi seluruh tautan YouTube, $matches[1] akan berisi kode unik video
                             if (isset($matches[1])) {
@@ -120,9 +121,12 @@
 
                             <div class="flex items-center justify-between mt-4">
                                 <div>
-                                    <a href="#" class="text-lg font-medium text-sky-700 dark:text-sky-300 hover:underline hover:text-blue-500">
-                                       {{$posting['time']}}
+                                    <a href=" {{$posting['link']}}" class="text-lg font-medium text-sky-700 dark:text-sky-300 hover:underline hover:text-blue-500" >
+                                      <button type="button" class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">To Article</button>
                                     </a>
+                                    <p class="text-xs font-bold text-gray-900 dark:text-white">
+                                      {{$posting['isoDate']}}
+                                    </p>
     
                                     {{-- <p class="text-sm text-gray-500 dark:text-gray-400">{{$p->tanggal}}</p> --}}
                                 </div>

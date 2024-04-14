@@ -8,9 +8,11 @@ use Illuminate\Support\Facades\Http;
 class FilmController extends Controller
 {
     public function getMovies(){
-        $apiurl = 'https://the-lazy-media-api.vercel.app/api/tech?page=1';
+        $apiurl = 'https://berita-indo-api-next.vercel.app/api/okezone-news/techno';
         $response = Http::get($apiurl);
         $movies = $response->json();
+
+        $limitedArticle = collect($movies['data'])->take(10);
         // dd($movies);
         // $response = Http::get($apiurl);
 
@@ -22,7 +24,7 @@ class FilmController extends Controller
 // }
 
         
-        return view('user.film', ['movies' => $movies]);
+        return view('user.film', ['limitedArticle' => $limitedArticle]);
 
 
 
