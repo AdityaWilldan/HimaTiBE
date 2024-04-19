@@ -17,12 +17,12 @@ class AdminController extends Controller
    }
 
    public function store(Request $request){
-    $request -> validate([
-        'title' => 'required|string',
-        'konten' => 'required|string',
-        'admin' => 'required|string',
-        'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-    ]);
+    // $request -> validate([
+    //     'title' => 'required|string',
+    //     'konten' => 'required|string',
+    //     'admin' => 'required|string',
+    //     'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+    // ]);
     
     $data = $request->except(['_token', 'submit']);
     $this->handleImageUpload($request, $data);
@@ -38,12 +38,12 @@ class AdminController extends Controller
 
 public function update($id, Request $request){
  // validasi untuk menghindari SQL INJECTION
- $request -> validate([
-    'title' => 'required|string',
-    'konten' => 'required|string',
-    'admin' => 'required|string',
-    'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
-]);
+//  $request -> validate([
+//     'title' => 'required|string',
+//     'konten' => 'required|string',
+//     'admin' => 'required|string',
+//     'gambar' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+// ]);
 
     $posting = posting::find($id);
 
