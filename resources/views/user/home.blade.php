@@ -615,7 +615,7 @@
     </div>
 </footer>
 
-<a href="#" id="backToTopBtn"
+{{-- <a href="#" id="backToTopBtn"
 class="fixed bottom-3 right-3 z-[9999] flex h-15 w-15 items-center justify-center  rounded-full p-4 mt-2 hover:animate-pulse">
 <button class="button">
   <svg class="svgIcon" viewBox="0 0 384 512">
@@ -624,7 +624,7 @@ class="fixed bottom-3 right-3 z-[9999] flex h-15 w-15 items-center justify-cente
     ></path>
   </svg>
 </button>
-</a>
+</a> --}}
 
 <script src="/script.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
@@ -636,5 +636,12 @@ class="fixed bottom-3 right-3 z-[9999] flex h-15 w-15 items-center justify-cente
 <script>
 AOS.init();
 </script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="HimaTI-chabot"
+  agent-id="c42dc70e-024d-4799-9ca2-e77f6c07ca2e"
+  language-code="id"
+></df-messenger>
 </body>
 </html>
