@@ -92,4 +92,10 @@ private function handleImageUpload(Request $request, array &$data)
             unlink($imagePath);
         }
     }
+    //menghitunh jumlah postingan blog untuk di tampilkan di dashboard admin
+    public function dashboard(){
+        $posting = posting::all();
+        $postingCount = $posting->count();
+        return view('admin.dashboard', compact(['posting','postingCount']));
+    }
 }

@@ -277,7 +277,7 @@ backToTopButton.addEventListener("click", function () {
 });
 });
 
-// AJAX
+// documentasi AJAX
 $(document).ready(function() {
             // Fungsi untuk memuat postingan blog secara asinkron saat halaman dimuat
             function loadPosts() {

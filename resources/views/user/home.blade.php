@@ -115,7 +115,7 @@
               </h1>
               <p class="mt-6 mb-8 text-lg sm:mb-12 text-gray-300 font-medium">Wadah Ekspresi & kreativitas Himpunan Mahasiswa Teknik informatika Universitas Mandiri Subang.
                 <br>
-                <span class="text-lg font-sans text-blue-500  poppins">berfikir cerdas bertindak jelas!</span>
+                <span class="text-lg font-sans text-blue-500 poppins" id="typewriter"></span>
               </p>
               <div class="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
                 <button></button>
@@ -643,5 +643,36 @@ AOS.init();
   agent-id="c42dc70e-024d-4799-9ca2-e77f6c07ca2e"
   language-code="id"
 ></df-messenger>
+<script>
+  const words = ["berfikir cerdas bertindak jelas!"];
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+
+function type() {
+  currentWord = words[i];
+  if (isDeleting) {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j-1);
+    j--;
+    if (j == 0) {
+      isDeleting = false;
+      i++;
+      if (i == words.length) {
+        i = 0;
+      }
+    }
+  } else {
+    document.getElementById("typewriter").textContent = currentWord.substring(0, j+1);
+    j++;
+    if (j == currentWord.length) {
+      isDeleting = true;
+    }
+  }
+  setTimeout(type, 100);
+}
+
+type();
+</script>
 </body>
 </html>
