@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\posting;
+use App\Models\Posting;
 use Illuminate\Http\Request;
 
 class ArtikelController extends Controller
